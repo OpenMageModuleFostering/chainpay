@@ -50,7 +50,7 @@ class ChainPay_Payments_Model_PaymentMethod extends Mage_Payment_Model_Method_Ab
 	
 	 private function CreateInvoice($order, $amount)
 	 {
-		$forwardOnCancelUri = \Mage::getUrl('');
+		$forwardOnCancelUri = \Mage::getUrl('/');
 		$forwardOnPaidUri = \Mage::getUrl(\Mage::getStoreConfig('payment/chainpay/forwardonpaiduri'));
 		$callbackUri = \Mage::getUrl(\Mage::getStoreConfig('payment/chainpay/callbackuri'));
     

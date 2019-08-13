@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>ChainPay</name>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <stability>stable</stability>
     <license>MITL</license>
     <channel>community</channel>
@@ -14,11 +14,13 @@ Bitcoin is a digital currency that millions of customers around the world are us
 After creating a ChainPay account, you can either withdraw your Bitcoin, or configure ChainPay to convert received Bitcoin into your native currency to be paid straight to your bank account.&#xD;
 &#xD;
 This means you get a lower charge compared to credit card processing, and your customers do not have to deliver credit card details. </description>
-    <notes>Stable release of Bitcoin payment gateway software with ChainPay.</notes>
+    <notes>Stable release of Bitcoin payment gateway software with ChainPay.&#xD;
+&#xD;
+1.1.1: Fixed cancel button uri.</notes>
     <authors><author><name>James Carter</name><user>jcarter</user><email>james.carter@altxe.com</email></author></authors>
-    <date>2015-04-26</date>
-    <time>13:00:41</time>
-    <contents><target name="magecommunity"><dir name="ChainPay"><dir name="Payments"><dir name="Block"><dir name="Form"><file name="chainpay.php" hash="46115edc3043e06422ebea76a455cdba"/></dir><file name="Info.php" hash="fc1b37d33a0e30a6ff5c7e8774392b03"/></dir><dir name="Helper"><file name="Data.php" hash="8a81facde74a6686558dcefb88fa36bd"/></dir><dir name="Model"><file name="PaymentMethod.php" hash="5609dee2518b1981a5c48ebfd6c3fb13"/></dir><dir name="controllers"><file name="CallbackController.php" hash="93ead30dde94e249719d602d2685dd12"/></dir><dir name="etc"><file name="config.xml" hash="407007cc4a001767dcac2e2960815945"/><file name="system.xml" hash="821dbcc6815e5314a1ec3fa643335638"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="ChainPay_Payments.xml" hash="bfbd31237ee80079a97df5b48cf365dc"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="chainpay"><file name="formBlock.phtml" hash="2fcfc7b65738536aa22169f7676fd389"/></dir></dir><dir name="layout"><file name="chainpay.xml" hash="ddf806ffbea95d30848d2649d62eab2f"/></dir></dir></dir></dir></target></contents>
+    <date>2015-05-12</date>
+    <time>17:34:02</time>
+    <contents><target name="magecommunity"><dir name="ChainPay"><dir name="Payments"><dir name="Block"><dir name="Form"><file name="chainpay.php" hash="46115edc3043e06422ebea76a455cdba"/></dir><file name="Info.php" hash="fc1b37d33a0e30a6ff5c7e8774392b03"/></dir><dir name="Helper"><file name="Data.php" hash="8a81facde74a6686558dcefb88fa36bd"/></dir><dir name="Model"><file name="PaymentMethod.php" hash="6a19036cb5b549c3acb92a860798b4c3"/><file name="PaymentMethod.php~" hash="77b0340e8a7eaf9a858393ac90db34a6"/></dir><dir name="controllers"><file name="CallbackController.php" hash="93ead30dde94e249719d602d2685dd12"/></dir><dir name="etc"><file name="config.xml" hash="407007cc4a001767dcac2e2960815945"/><file name="system.xml" hash="821dbcc6815e5314a1ec3fa643335638"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="ChainPay_Payments.xml" hash="bfbd31237ee80079a97df5b48cf365dc"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="chainpay"><file name="formBlock.phtml" hash="2fcfc7b65738536aa22169f7676fd389"/></dir></dir><dir name="layout"><file name="chainpay.xml" hash="ddf806ffbea95d30848d2649d62eab2f"/></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
