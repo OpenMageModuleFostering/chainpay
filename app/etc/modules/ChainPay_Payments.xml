@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <ChainPay_Payments>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Payment />
+            </depends>
+        </ChainPay_Payments>
+    </modules>
+</config>

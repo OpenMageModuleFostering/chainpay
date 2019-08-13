@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+       <ChainPay_Payments>
+          <version>0.1.0</version>
+       </ChainPay_Payments>
+    </modules>
+ 
+     <frontend>
+        <routers>
+            <chainpay>
+                <use>standard</use>
+                <args>
+                    <module>ChainPay_Payments</module>
+                    <frontName>chainpay</frontName>
+                </args>
+            </chainpay>
+        </routers>
+        <layout>
+            <updates>
+                <chainpay>
+                    <file>chainpay.xml</file>
+                </chainpay>
+            </updates>
+        </layout>
+    </frontend>
+ 
+    <global>
+		<blocks>
+			<chainpay>
+				<class>ChainPay_Payments_Block</class>
+			</chainpay>
+		</blocks>
+		<helpers>
+			<chainpay>
+				<class>ChainPay_Payments_Helper</class>
+			</chainpay>
+		</helpers>
+	 
+		<models>
+			<chainpay>
+				<class>ChainPay_Payments_Model</class>
+			</chainpay>
+		</models>
+	 
+		<resources>
+			<chainpay_setup>
+				<setup>
+					<module>ChainPay_Payments</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</chainpay_setup>
+			<chainpay_write>
+				<connection>
+				  <use>core_write</use>
+				</connection>
+			</chainpay_write>
+			<chainpay_read>
+			   <connection>
+				<use>core_read</use>
+			  </connection>
+			</chainpay_read>
+		</resources>
+    </global>
+ 
+    <default>
+        <payment>
+            <chainpay>
+                <active>0</active>
+				<model>chainpay/PaymentMethod</model>
+                <title>Bitcoin</title>
+				<payment_action>authorize</payment_action>
+                <debug>1</debug>
+				
+				<callbackuri>chainpay/callback</callbackuri>
+                <forwardonpaiduri>checkout/onepage/success</forwardonpaiduri>
+                
+				<apikey></apikey>
+				<privatekey></privatekey>
+				<sandbox>0</sandbox>
+				
+				<order_status>pending</order_status>
+				<invoice_created>pending</invoice_created>
+				<invoice_paid>processing</invoice_paid>
+				<invoice_completed>complete</invoice_completed>
+				<invoice_expired>canceled</invoice_expired>
+				<invoice_cancelled>canceled</invoice_cancelled>
+            </chainpay>
+         </payment>
+    </default>
+</config>
