@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/ChainPay",
+    "name": "OpenMageModuleFostering\/ChainPay",
     "type": "magento-module",
     "license": "MITL",
     "homepage": "",
     "description": "Enable ChainPay to accept Bitcoin on your Magento platform. Pay less to receive your payments. ",
     "authors": [
-    {
-        "name": "James Carter",
-        "email": "james.carter@altxe.com"
-    }
-],
+        {
+            "name": "James Carter",
+            "email": "james.carter@altxe.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
